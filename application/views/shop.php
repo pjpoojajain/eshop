@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Fashi Template">
-    <meta name="keywords" content="Fashi, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fashi | Template</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assests/css/style.css" type="text/css">
-</head>
+<?php include 'header/header.php';?>
 
 <body>
     <!-- Page Preloder -->
@@ -161,7 +140,7 @@
                 <nav class="nav-menu mobile-menu">
                     <ul>
                         <li><a href="<?php echo base_url();?>">Home</a></li>
-                        <li><a href="<?php echo base_url();?>welcome/shop/">Shop</a></li>
+                        <li class="active"><a href="<?php echo base_url();?>welcome/shop/">Shop</a></li>
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
@@ -169,8 +148,8 @@
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="<?php echo base_url(); ?>welcome/blog/">Blog</a></li>
+                        <li><a href="<?php echo base_url(); ?>welcome/contact/">Contact</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="./blog-details.html">Blog Details</a></li>
@@ -701,16 +680,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!-- Footer Section End -->
     <!-- Js Plugins -->
-    <script src="<?php echo base_url();?>assests/js/jquery-3.3.1.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/jquery-ui.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/jquery.countdown.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/jquery.nice-select.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/jquery.zoom.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/jquery.dd.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/jquery.slicknav.js"></script>
-    <script src="<?php echo base_url();?>assests/js/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url();?>assests/js/main.js"></script>
+   <?php include 'header/footer.php';?>
 </body>
 
 </html>

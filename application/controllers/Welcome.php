@@ -34,4 +34,12 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('shop');
 	}
+	public function blog()
+	{
+		$this->load->view('blog');
+	}
+	public function contact()
+	{
+		$this->load->view('contact');
+	}
 }
