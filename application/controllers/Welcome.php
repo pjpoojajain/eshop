@@ -28,18 +28,62 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('home');
+		$this->load->view('header/header');
+		$this->load->view('user/home');
+		$this->load->view('header/footer.php');
 	}
 	public function shop()
 	{
-		$this->load->view('shop');
+		$this->load->view('header/header');
+		$this->load->view('user/shop');
+		$this->load->view('header/footer.php');
 	}
 	public function blog()
 	{
-		$this->load->view('blog');
+		$this->load->view('header/header');
+		$this->load->view('user/blog');
+		$this->load->view('header/footer.php');
 	}
 	public function contact()
 	{
-		$this->load->view('contact');
+		$this->load->view('header/header');
+		$this->load->view('user/contact');
+		$this->load->view('header/footer.php');
+	}
+	public function blog_details()
+	{
+		$this->load->view('header/header');
+		$this->load->view('user/blog_details');
+		$this->load->view('header/footer.php');
+	}
+	public function shopping_cart()
+	{
+		$this->load->view('header/header');
+		$this->load->view('user/shopping_cart');
+		$this->load->view('header/footer.php');
+	}
+	public function checkout()
+	{
+		$this->load->view('header/header');
+		$this->load->view('user/checkout');
+		$this->load->view('header/footer.php');
+	}
+	public function faq()
+	{
+		$this->load->view('header/header');
+		$this->load->view('user/faq');
+		$this->load->view('header/footer.php');
+	}
+	public function register()
+	{
+		$this->load->view('header/header');
+		$this->load->view('user/register');
+		$this->load->view('header/footer.php');
+	}
+	public function login()
+	{
+		$this->load->view('header/header');
+		$this->load->view('user/login');
+		$this->load->view('header/footer.php');
 	}
 }
