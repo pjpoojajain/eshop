@@ -22,8 +22,16 @@
                         <h2>Register</h2>
                         <form action="#">
                             <div class="group-input">
-                                <label for="username">Username or email address *</label>
-                                <input type="text" id="username">
+                                <label for="username">Your name</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="group-input">
+                                <label for="username">Mobile number</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="group-input">
+                                <label for="username">Email (optional)</label>
+                                <input type="text" id="name">
                             </div>
                             <div class="group-input">
                                 <label for="pass">Password *</label>
